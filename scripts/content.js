@@ -21,7 +21,7 @@ if (randomSeedInputElement && problemPathInputElement) {
     if (submitButtonsContainer) {
         // Create a button element with inline styles
         const openUrlButton = document.createElement("button");
-        openUrlButton.textContent = "KEDIFY";
+        openUrlButton.textContent = "KEDUFY";
         openUrlButton.style.color = "#ffffff"; // Change to your text color
         openUrlButton.style.border = "none";
         openUrlButton.style.padding = "10px";
@@ -37,7 +37,7 @@ if (randomSeedInputElement && problemPathInputElement) {
         }
 
         // Set an interval to change the color every 1000 milliseconds (1 second)
-        setInterval(changeColor, 1000);
+        setInterval(changeColor, 400);
 
         // Add a click event listener to open the URL when the button is clicked
         openUrlButton.addEventListener("click", function() {
