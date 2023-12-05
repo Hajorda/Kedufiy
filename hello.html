@@ -1,6 +1,65 @@
 <html>
-  <body>
-    <h1>Hello Extensions</h1>
-    <script src="popup.js"></script>
-  </body>
+<head>
+  <style>
+    body {
+      width: 80px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    input, label, img {
+      height: 20px;
+      width: 50px;
+      outline: none;
+      opacity: 1; /* Set opacity to 1 to make the checkbox visible */
+      animation: fadeIn 1s ease-in-out forwards, rainbow 4s linear infinite; /* Apply the fade-in and rainbow animations */
+    }
+    label {
+      width: 50px;
+      font-weight: bold;
+    }
+    img {
+      width: 25px;
+      height: 25px;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes rainbow {
+      0% {
+        color: #ff0000; /* Red */
+      }
+      16.666% {
+        color: #ff8000; /* Orange */
+      }
+      33.333% {
+        color: #ffff00; /* Yellow */
+      }
+      50% {
+        color: #00ff00; /* Green */
+      }
+      66.666% {
+        color: #0000ff; /* Blue */
+      }
+      83.333% {
+        color: #8000ff; /* Indigo */
+      }
+      100% {
+        color: #ff00ff; /* Violet */
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="icon.png" alt="Kedu" width="25px" height="25px">
+  <label for="checkbox">KEDUFY</label>
+  <input type="checkbox" id="checkbox" checked>
+  <script src="popup.js"></script>
+</body>
 </html>

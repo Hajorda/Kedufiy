@@ -1,10 +1,26 @@
 {
     "manifest_version": 3,
-    "name": "Hello Extensions",
-    "description": "Base Level Extension",
+    "name": "KEDUFIY",
+    "description": "Webwork Solver",
+    "permissions": ["storage", "declarativeContent", "activeTab", "scripting"],
     "version": "1.0",
+    "author": "Hajorda",
+    "content_scripts": [
+      {
+        "js": ["scripts/content.js"],
+        "matches": [
+          "https://webwork.tedu.edu.tr/*"
+        ]
+      }
+    ],
     "action": {
       "default_popup": "hello.html",
-      "default_icon": "hello_extensions.png"
+      "default_icon": "icon.png"
+    },
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
     }
   }
+  
