@@ -1,4 +1,4 @@
-![Logo](https://i.ibb.co/MsGxMfV/Safeimagekit-resized-img.png)
+![Logo](https://i.ibb.co/64tVSXg/icon.png)
 
 
 # Kedufy
